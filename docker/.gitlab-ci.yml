@@ -10,14 +10,14 @@ include:
 
 # BUILD
 
-build-uglify:
+build-semantic-release:
   extends: .container-build
   variables:
     <<: *container-building-variables
 
 # PUBLISH
 
-publish-uglify:
+publish-semantic-release:
   extends: .container-publish
   variables:
     <<: *container-building-variables
