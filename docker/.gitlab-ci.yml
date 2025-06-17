@@ -1,6 +1,6 @@
 include:
   - project: templates/gitlab/container-ci
-    ref: tmp
+    ref: main
     file: container-ci-kaniko.yml
 
 .container-building-variables:
