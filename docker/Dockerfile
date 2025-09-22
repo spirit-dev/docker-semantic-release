@@ -13,5 +13,5 @@ LABEL alpine_version="${alpine_version}" \
     from="gitlab-registry-internal.spirit-dev.net/infrastructure/docker/alpine" \
     maintainer="bordat.jean@gmail.com"
 
-RUN apk add --no-cache nodejs=22.15.1-r0 npm=10.9.1-r0 git=2.47.2-r0 && \
+RUN apk add --no-cache nodejs=22.15.1-r0 npm=10.9.1-r0 git=2.47.3-r0 && \
     npm install -g semantic-release @semantic-release/gitlab @semantic-release/git @semantic-release/changelog @google/semantic-release-replace-plugin
