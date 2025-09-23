@@ -6,7 +6,7 @@ include:
 .container-building-variables:
   variables: &container-building-variables
     # renovate: datasource=docker depName=gitlab-registry-internal.spirit-dev.net/infrastructure/docker/alpine
-    ALPINE_VERSION: "3.21"
+    ALPINE_VERSION: 3.21.2
     CONTAINER_BUILD_ARGS: "--build-arg alpine_version=${ALPINE_VERSION}"
 
 # BUILD
