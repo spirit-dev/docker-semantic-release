@@ -1,0 +1,25 @@
+include:
+  - project: templates/gitlab/container-ci
+    ref: main
+    file: container-ci-kaniko.yml
+
+.container-building-variables:
+  variables: &container-building-variables
+    # renovate: datasource=docker depName=gitlab-registry-internal.spirit-dev.net/infrastructure/docker/alpine
+    ALPINE_VERSION: 3.21.2
+    CONTAINER_BUILD_ARGS: "--build-arg alpine_version=${ALPINE_VERSION}"
+
+# BUILD
+
+build-semantic-release:
+  extends: .container-build
+  variables:
+    <<: *container-building-variables
+
+# PUBLISH
+
+publish-semantic-release:
+  extends: .container-publish
+  variables:
+    <<: *container-building-variables
+    ADDITIONAL_DESTINATIONS: "latest"
