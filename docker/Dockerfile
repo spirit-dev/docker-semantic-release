@@ -14,4 +14,4 @@ LABEL alpine_version="${alpine_version}" \
     maintainer="bordat.jean@gmail.com"
 
 RUN apk add --no-cache nodejs=22.15.1-r0 npm=10.9.1-r0 git=2.47.3-r0 && \
-    npm install -g semantic-release @semantic-release/gitlab @semantic-release/git @semantic-release/changelog @google/semantic-release-replace-plugin @semantic-release/exec @conventional-changelog-conventionalcommits
+    npm install -g semantic-release @semantic-release/gitlab @semantic-release/git @semantic-release/changelog @google/semantic-release-replace-plugin @semantic-release/exec conventional-changelog-conventionalcommits
