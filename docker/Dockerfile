@@ -20,4 +20,5 @@ RUN apk add --no-cache nodejs=22.15.1-r0 npm=10.9.1-r0 git=2.47.3-r0 && \
     @semantic-release/changelog \
     @google/semantic-release-replace-plugin \
     @semantic-release/exec \
-    conventional-changelog-conventionalcommits
+    conventional-changelog-conventionalcommits \
+    @semantic-release/commit-analyzer
