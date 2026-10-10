@@ -1,7 +1,6 @@
 # semantic-release
 
-[![GitLab Sync](https://img.shields.io/badge/gitlab_sync-semantic_release-blue?style=for-the-badge&logo=gitlab)](https://gitlab-internal.spirit-dev.net/github-mirror/docker-semantic-release) <!-- markdownlint-disable MD041 -->
-[![GitHub Mirror](https://img.shields.io/badge/github_mirror-semantic_release-blue?style=for-the-badge&logo=github)](https://github.com/spirit-dev/docker-semantic-release)
+
 
 <!--TOC-->
 
@@ -40,7 +39,7 @@ This repository is dedicated to oficial images used in our differents projects /
 
 ### Os
 
-- [**Alpine**](https://gitlab-internal.spirit-dev.net/infrastructure/docker/semantic-release)
+- [**Alpine**](https://github.com/spirit-dev/docker-semantic-release)
 
 ## TEST
 
@@ -106,4 +105,4 @@ container-structure-test test --image tbd/{IMAGES}:{TAG} --config {TEST_FILE}.ya
 
 - <https://linux.die.net/man/1/make>
 - <https://github.com/GoogleContainerTools/container-structure-test>
-- <https://docs.docker.com/engine/reference/builder/>
+- <https://docs.docker.com/engine/reference/builder/
